@@ -1,5 +1,5 @@
 pipeline {
-    agent {docker {image 'python:3.12.1-alpine3.19'}}
+    agent {docker {image 'myjenkins-blueocean:2.440.2-1'}}
     stages {
         stage('build') {
             steps {
