@@ -1,9 +1,9 @@
 pipeline {
-    agent {docker {image 'myjenkins-blueocean:2.440.2-1'}}
+    agent {docker {image 'jenkins/jenkins:lts-jdk17'}}
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
+                sh 'python3 jsonParser.py'
             }
         }
     }
