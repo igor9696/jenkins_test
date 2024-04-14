@@ -1,9 +1,9 @@
 pipeline {
-    agent {docker {image 'myjenkins-blueocean:2.440.2-1'}}
+    agent {docker {image 'python:alpine3.18'}}
     stages {
         stage('build') {
             steps {
-                sh 'python --version'
+                sh 'python3 --version'
             }
         }
     }
